@@ -6,7 +6,4 @@ Input *Input::Instantiate()
     return input;
 }
 
-Input::Input()
-{
-    std::cout << "Hello World, " << std::endl;
-}
+Input::Input() = default;
