@@ -1,15 +1,13 @@
 #include <iostream>
 
-class Input {
+class Input
+{
 public:
+    static Input *Instantiate();
 
-    static Input* Instantiate();
+    Input(const Input &c) = delete;
+    Input(Input &&m) = delete;
 
-    Input(const Input& c) = delete;
-    Input(Input&& m) = delete;
-    
 private:
-
     Input();
-    
 };
