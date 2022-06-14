@@ -3,7 +3,10 @@
 
 int main(int argc, char *argv[])
 {
-    Input* i = Input::Instantiate();
-    
-    std::cin.get();
+    Input *InputHandler = Input::Instantiate();
+
+    int x;
+    InputHandler->ForceInput(x);
+
+    std::cout << "Your input is: " << x << std::endl;
 }
